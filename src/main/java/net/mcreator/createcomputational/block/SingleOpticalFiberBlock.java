@@ -27,7 +27,7 @@ public class SingleOpticalFiberBlock extends Block {
 	public static final BooleanProperty TRANSFER = BooleanProperty.create("transfer");
 
 	public SingleOpticalFiberBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.GRAVEL).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of().sound(SoundType.GLASS).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(TRANSFER, false));
 	}
 
@@ -44,6 +44,18 @@ public class SingleOpticalFiberBlock extends Block {
 	@Override
 	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return Shapes.empty();
+	}
+
+	@Override
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return switch (state.getValue(FACING)) {
+			default -> box(7.5, 0, 0, 8.5, 1, 16);
+			case NORTH -> box(7.5, 0, 0, 8.5, 1, 16);
+			case EAST -> box(0, 0, 7.5, 16, 1, 8.5);
+			case WEST -> box(0, 0, 7.5, 16, 1, 8.5);
+			case UP -> box(7.5, 0, 0, 8.5, 16, 1);
+			case DOWN -> box(7.5, 0, 15, 8.5, 16, 16);
+		};
 	}
 
 	@Override
