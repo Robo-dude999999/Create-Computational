@@ -1,0 +1,24 @@
+{
+	"format_version": "1.21.11",
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "block/singleopticalfibertexture",
+		"particle": "block/singleopticalfibertexture"
+	},
+	"elements": [
+		{
+			"from": [7.5, 0, 0],
+			"to": [8.5, 1, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.5, 0, 0]},
+			"faces": {
+				"north": {"uv": [1.375, 1.375, 2.125, 2.125], "texture": "#0"},
+				"east": {"uv": [0, 0, 8, 0.5], "texture": "#0"},
+				"south": {"uv": [1.375, 1.375, 2.125, 2.125], "texture": "#0"},
+				"west": {"uv": [0, 0.5, 8, 1], "texture": "#0"},
+				"up": {"uv": [0.5, 9, 0, 1], "texture": "#0"},
+				"down": {"uv": [1, 1, 0.5, 9], "texture": "#0"}
+			}
+		}
+	]
+}

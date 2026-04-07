@@ -1,0 +1,415 @@
+{
+  "mod_elements": [
+    {
+      "name": "RobotConstructor",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "robot_constructor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_computational/models/item/robot_constructor.json",
+          "src/main/java/net/mcreator/createcomputational/block/entity/RobotConstructorBlockEntity.java",
+          "src/main/resources/assets/create_computational/blockstates/robot_constructor.json",
+          "src/main/resources/assets/create_computational/models/block/robot_constructor.json",
+          "src/main/resources/data/create_computational/loot_tables/blocks/robot_constructor.json",
+          "src/main/java/net/mcreator/createcomputational/block/RobotConstructorBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "RobotConstructorBlockAdded",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "robot_constructor_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcomputational/procedures/RobotConstructorBlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TankRobot",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tank_robot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcomputational/entity/TankRobotEntity.java",
+          "src/main/resources/assets/create_computational/models/item/tank_robot_spawn_egg.json",
+          "src/main/java/net/mcreator/createcomputational/client/renderer/TankRobotRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "TankRobotItemRightclickedOnBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tank_robot_item_rightclicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcomputational/procedures/TankRobotItemRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TankRobotItem",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tank_robot_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcomputational/item/TankRobotItemItem.java",
+          "src/main/resources/assets/create_computational/models/item/tank_robot_item.json"
+        ]
+      }
+    },
+    {
+      "name": "RobotConstructorGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "robot_constructor_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcomputational/world/inventory/RobotConstructorGUIMenu.java",
+          "src/main/java/net/mcreator/createcomputational/client/gui/RobotConstructorGUIScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "CreateComputatonal",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "create_computatonal",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "CorrosionRemovingSolution",
+      "type": "fluid",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "corrosion_removing_solution",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcomputational/fluid/CorrosionRemovingSolutionFluid.java",
+          "src/main/java/net/mcreator/createcomputational/block/CorrosionRemovingSolutionBlock.java",
+          "src/main/resources/assets/create_computational/models/block/corrosion_removing_solution.json",
+          "src/main/java/net/mcreator/createcomputational/item/CorrosionRemovingSolutionItem.java",
+          "src/main/java/net/mcreator/createcomputational/fluid/types/CorrosionRemovingSolutionFluidType.java",
+          "src/main/resources/assets/create_computational/models/item/corrosion_removing_solution_bucket.json",
+          "src/main/resources/assets/create_computational/blockstates/corrosion_removing_solution.json"
+        ]
+      }
+    },
+    {
+      "name": "PlasticCasing",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plastic_casing",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_computational/models/block/plastic_casing.json",
+          "src/main/resources/data/create_computational/loot_tables/blocks/plastic_casing.json",
+          "src/main/java/net/mcreator/createcomputational/block/PlasticCasingBlock.java",
+          "src/main/resources/assets/create_computational/models/item/plastic_casing.json",
+          "src/main/resources/assets/create_computational/blockstates/plastic_casing.json"
+        ]
+      }
+    },
+    {
+      "name": "PlasticCasingNeighbourBlockChanges",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plastic_casing_neighbour_block_changes",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/createcomputational/procedures/PlasticCasingNeighbourBlockChangesProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "PlasticSheet",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plastic_sheet",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcomputational/item/PlasticSheetItem.java",
+          "src/main/resources/assets/create_computational/models/item/plastic_sheet.json"
+        ]
+      }
+    },
+    {
+      "name": "TestTransfer",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_transfer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcomputational/block/TestTransferBlock.java",
+          "src/main/java/net/mcreator/createcomputational/block/entity/TestTransferBlockEntity.java",
+          "src/main/resources/assets/create_computational/models/block/test_transfer.json",
+          "src/main/resources/data/create_computational/loot_tables/blocks/test_transfer.json",
+          "src/main/resources/assets/create_computational/models/item/test_transfer.json",
+          "src/main/resources/assets/create_computational/blockstates/test_transfer.json"
+        ]
+      }
+    },
+    {
+      "name": "TestTransferOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_transfer_on_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/createcomputational/procedures/TestTransferOnTickUpdateProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "TestHolder",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_holder",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_computational/loot_tables/blocks/test_holder.json",
+          "src/main/resources/assets/create_computational/blockstates/test_holder.json",
+          "src/main/java/net/mcreator/createcomputational/block/TestHolderBlock.java",
+          "src/main/resources/assets/create_computational/models/block/test_holder.json",
+          "src/main/resources/assets/create_computational/models/item/test_holder.json"
+        ]
+      }
+    },
+    {
+      "name": "TestTSplit",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_t_split",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_computational/blockstates/test_t_split.json",
+          "src/main/resources/assets/create_computational/models/block/test_t_split.json",
+          "src/main/resources/data/create_computational/loot_tables/blocks/test_t_split.json",
+          "src/main/resources/assets/create_computational/models/item/test_t_split.json",
+          "src/main/java/net/mcreator/createcomputational/block/TestTSplitBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "TestTSplitIn",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_t_split_in",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_computational/models/block/test_t_split_in.json",
+          "src/main/java/net/mcreator/createcomputational/block/TestTSplitInBlock.java",
+          "src/main/resources/assets/create_computational/models/item/test_t_split_in.json",
+          "src/main/resources/data/create_computational/loot_tables/blocks/test_t_split_in.json",
+          "src/main/resources/assets/create_computational/blockstates/test_t_split_in.json"
+        ]
+      }
+    },
+    {
+      "name": "TestTransferDoubleSidedOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_transfer_double_sided_on_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/createcomputational/procedures/TestTransferDoubleSidedOnTickUpdateProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SingleOpticalFiber",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "single_optical_fiber",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_computational/loot_tables/blocks/single_optical_fiber.json",
+          "src/main/resources/assets/create_computational/blockstates/single_optical_fiber.json",
+          "src/main/resources/assets/create_computational/models/item/single_optical_fiber.json",
+          "src/main/resources/assets/create_computational/models/block/single_optical_fiber.json",
+          "src/main/java/net/mcreator/createcomputational/block/SingleOpticalFiberBlock.java"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {
+    "BLOCKS:minecraft:replaceable": [
+      "~CUSTOM:CorrosionRemovingSolution"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "item.create_computational.corrosion_removing_solution_bucket": "Corrosion Removing Solution Bucket",
+      "entity.create_computational.tank_robot": "Tank Robot",
+      "block.create_computational.robot_constructor": "Robot Constructor",
+      "fluid.create_computational.corrosion_removing_solution": "Corrosion Removing Solution",
+      "block.create_computational.corrosion_removing_solution": "Corrosion Removing Solution",
+      "item.create_computational.tank_robot_spawn_egg": "Tank Robot Spawn Egg",
+      "gui.create_computational.robot_constructor_gui.button_craft": "Craft",
+      "item.create_computational.tank_robot_item": "Tank Robot Item",
+      "gui.create_computational.robot_constructor_gui.tooltip_use_build_to_build_the_robot": " Use /build to build the robot.",
+      "item_group.create_computational.create_computatonal": "Create: Computatonal",
+      "gui.create_computational.robot_constructor_gui.tooltip_use_blueprintadd_robot_name_t": "Use /loadProgram \u003cprogram name\u003e name\u003e to add your program to a usb drive.",
+      "gui.create_computational.robot_constructor_gui.commandbar": "/",
+      "gui.create_computational.robot_constructor_gui.label_test": "Test",
+      "gui.create_computational.robot_constructor_gui.label_build": "/build",
+      "fluid_type.create_computational.corrosion_removing_solution": "Corrosion Removing Solution",
+      "block.create_computational.plastic_casing": "Plastic Casing",
+      "item.create_computational.plastic_sheet": "Plastic Sheet",
+      "block.create_computational.test_transfer": "Test Transfer",
+      "block.create_computational.test_holder": "Test Holder",
+      "block.create_computational.test_t_split": "Test T Split Out",
+      "block.create_computational.test_t_split_in": "Test T Split In",
+      "block.create_computational.single_optical_fiber": "Single Optical Fiber"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/net/mcreator/createcomputational/init/CreateComputationalModFluids.java",
+      "src/main/java/net/mcreator/createcomputational/init/CreateComputationalModFluidTypes.java",
+      "src/main/java/net/mcreator/createcomputational/init/CreateComputationalModScreens.java",
+      "src/main/java/net/mcreator/createcomputational/init/CreateComputationalModMenus.java",
+      "src/main/java/net/mcreator/createcomputational/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/createcomputational/init/CreateComputationalModBlocks.java",
+      "src/main/java/net/mcreator/createcomputational/init/CreateComputationalModBlockEntities.java",
+      "src/main/java/net/mcreator/createcomputational/init/CreateComputationalModItems.java",
+      "src/main/java/net/mcreator/createcomputational/init/CreateComputationalModEntityRenderers.java",
+      "src/main/java/net/mcreator/createcomputational/init/CreateComputationalModEntities.java",
+      "src/main/resources/META-INF/mods.toml",
+      "src/main/java/net/mcreator/createcomputational/init/CreateComputationalModModels.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/createcomputational/init/CreateComputationalModTabs.java",
+      "src/main/java/net/mcreator/createcomputational/CreateComputationalMod.java"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "create_computational",
+    "modName": "Create: Computational",
+    "version": "1.0.0",
+    "author": "jdken, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.createcomputational"
+  },
+  "mcreatorVersion": 202500344519
+}

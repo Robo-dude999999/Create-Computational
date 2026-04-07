@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "create_computational:block/transfertest",
+    "up": "create_computational:block/transfertest",
+    "north": "create_computational:block/front",
+    "east": "create_computational:block/back",
+    "south": "create_computational:block/transfertest",
+    "west": "create_computational:block/back",
+    "particle": "create_computational:block/transfertest"
+  },
+  "render_type": "solid"
+}

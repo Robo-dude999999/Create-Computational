@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "create_computational:block/hold",
+    "up": "create_computational:block/hold",
+    "north": "create_computational:block/hold",
+    "east": "create_computational:block/hold",
+    "south": "create_computational:block/hold",
+    "west": "create_computational:block/hold",
+    "particle": "create_computational:block/hold"
+  },
+  "render_type": "solid"
+}

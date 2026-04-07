@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "robotconstructortexture"
+      },
+      "name": "default"
+    }
+  }
+}

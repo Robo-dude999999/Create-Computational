@@ -1,0 +1,9 @@
+{
+  "parent": "create_computational:custom/singleopticalfiber",
+  "textures": {
+    "all": "create_computational:block/singleopticalfibertexture",
+    "particle": "create_computational:block/singleopticalfibertexture",
+    "0": "create_computational:block/singleopticalfibertexture"
+  },
+  "render_type": "solid"
+}

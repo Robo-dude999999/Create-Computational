@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "create_computational:block/plasticcasing",
+    "up": "create_computational:block/plasticcasing",
+    "north": "create_computational:block/plasticcasing",
+    "east": "create_computational:block/plasticcasing",
+    "south": "create_computational:block/plasticcasing",
+    "west": "create_computational:block/plasticcasing",
+    "particle": "create_computational:block/plasticcasing"
+  },
+  "render_type": "solid"
+}

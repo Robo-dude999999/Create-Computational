@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "create_computational:block/test_t_split"
+    },
+    "facing=east": {
+      "model": "create_computational:block/test_t_split",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "create_computational:block/test_t_split",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "create_computational:block/test_t_split",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "create_computational:block/robot_constructor"
+    },
+    "facing=east": {
+      "model": "create_computational:block/robot_constructor",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "create_computational:block/robot_constructor",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "create_computational:block/robot_constructor",
+      "y": 270
+    }
+  }
+}

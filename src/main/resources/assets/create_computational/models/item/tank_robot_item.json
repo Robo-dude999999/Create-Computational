@@ -1,0 +1,7 @@
+{
+  "parent": "create_computational:custom/treadroboitem",
+  "textures": {
+    "0": "create_computational:block/treadrobotexture",
+    "particle": "create_computational:item/treadrobotexture"
+  }
+}
