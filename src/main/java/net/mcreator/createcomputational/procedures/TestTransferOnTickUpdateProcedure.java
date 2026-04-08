@@ -29,7 +29,8 @@ public class TestTransferOnTickUpdateProcedure {
 			zz = z;
 		}
 		if (((world.getBlockState(BlockPos.containing(xx, y, zz))).getBlock() == CreateComputationalModBlocks.TEST_TRANSFER.get()
-				|| (world.getBlockState(BlockPos.containing(xx, y, zz))).getBlock() == CreateComputationalModBlocks.SINGLE_OPTICAL_FIBER.get())
+				|| (world.getBlockState(BlockPos.containing(xx, y, zz))).getBlock() == CreateComputationalModBlocks.SINGLE_OPTICAL_FIBER.get()
+				|| (world.getBlockState(BlockPos.containing(xx, y, zz))).getBlock() == CreateComputationalModBlocks.TOP_SINGLE_OPTICAL_FIBER.get())
 				&& (getDirectionFromBlockState((world.getBlockState(BlockPos.containing(xx, y, zz))))) == (getDirectionFromBlockState((world.getBlockState(BlockPos.containing(x, y, z)))))
 				|| (world.getBlockState(BlockPos.containing(xx, y, zz))).getBlock() == CreateComputationalModBlocks.TEST_T_SPLIT_IN.get()
 						&& (getDirectionFromBlockState((world.getBlockState(BlockPos.containing(xx, y, zz))))) == (getDirectionFromBlockState((world.getBlockState(BlockPos.containing(x, y, z)))))
@@ -41,8 +42,8 @@ public class TestTransferOnTickUpdateProcedure {
 				BlockPos _pos = BlockPos.containing(x, y, z);
 				BlockState _bs = world.getBlockState(_pos);
 				if (_bs.getBlock().getStateDefinition().getProperty("transfer") instanceof BooleanProperty _booleanProp)
-					world.setBlock(_pos, _bs.setValue(_booleanProp, ((world.getBlockState(BlockPos.containing(xx, y, zz))).getBlock().getStateDefinition().getProperty("transfer") instanceof BooleanProperty _getbp45
-							&& (world.getBlockState(BlockPos.containing(xx, y, zz))).getValue(_getbp45))), 3);
+					world.setBlock(_pos, _bs.setValue(_booleanProp, ((world.getBlockState(BlockPos.containing(xx, y, zz))).getBlock().getStateDefinition().getProperty("transfer") instanceof BooleanProperty _getbp47
+							&& (world.getBlockState(BlockPos.containing(xx, y, zz))).getValue(_getbp47))), 3);
 			}
 		} else {
 			{

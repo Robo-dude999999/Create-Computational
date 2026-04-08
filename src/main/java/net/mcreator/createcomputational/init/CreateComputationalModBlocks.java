@@ -22,6 +22,7 @@ public class CreateComputationalModBlocks {
 	public static final RegistryObject<Block> TEST_T_SPLIT;
 	public static final RegistryObject<Block> TEST_T_SPLIT_IN;
 	public static final RegistryObject<Block> SINGLE_OPTICAL_FIBER;
+	public static final RegistryObject<Block> TOP_SINGLE_OPTICAL_FIBER;
 	static {
 		ROBOT_CONSTRUCTOR = REGISTRY.register("robot_constructor", RobotConstructorBlock::new);
 		CORROSION_REMOVING_SOLUTION = REGISTRY.register("corrosion_removing_solution", CorrosionRemovingSolutionBlock::new);
@@ -31,6 +32,7 @@ public class CreateComputationalModBlocks {
 		TEST_T_SPLIT = REGISTRY.register("test_t_split", TestTSplitBlock::new);
 		TEST_T_SPLIT_IN = REGISTRY.register("test_t_split_in", TestTSplitInBlock::new);
 		SINGLE_OPTICAL_FIBER = REGISTRY.register("single_optical_fiber", SingleOpticalFiberBlock::new);
+		TOP_SINGLE_OPTICAL_FIBER = REGISTRY.register("top_single_optical_fiber", TopSingleOpticalFiberBlock::new);
 	}
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

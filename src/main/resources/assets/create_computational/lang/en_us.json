@@ -20,5 +20,6 @@
   "block.create_computational.test_holder": "Test Holder",
   "block.create_computational.test_t_split": "Test T Split Out",
   "block.create_computational.test_t_split_in": "Test T Split In",
-  "block.create_computational.single_optical_fiber": "Single Optical Fiber"
+  "block.create_computational.single_optical_fiber": "Single Optical Fiber",
+  "block.create_computational.top_single_optical_fiber": "Single Optical Fiber"
 }

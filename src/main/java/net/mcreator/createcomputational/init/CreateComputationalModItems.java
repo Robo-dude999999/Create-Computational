@@ -30,6 +30,7 @@ public class CreateComputationalModItems {
 	public static final RegistryObject<Item> TEST_T_SPLIT;
 	public static final RegistryObject<Item> TEST_T_SPLIT_IN;
 	public static final RegistryObject<Item> SINGLE_OPTICAL_FIBER;
+	public static final RegistryObject<Item> TOP_SINGLE_OPTICAL_FIBER;
 	static {
 		ROBOT_CONSTRUCTOR = block(CreateComputationalModBlocks.ROBOT_CONSTRUCTOR);
 		TANK_ROBOT_SPAWN_EGG = REGISTRY.register("tank_robot_spawn_egg", () -> new ForgeSpawnEggItem(CreateComputationalModEntities.TANK_ROBOT, -16777216, -16724992, new Item.Properties()));
@@ -42,6 +43,7 @@ public class CreateComputationalModItems {
 		TEST_T_SPLIT = block(CreateComputationalModBlocks.TEST_T_SPLIT);
 		TEST_T_SPLIT_IN = block(CreateComputationalModBlocks.TEST_T_SPLIT_IN);
 		SINGLE_OPTICAL_FIBER = block(CreateComputationalModBlocks.SINGLE_OPTICAL_FIBER);
+		TOP_SINGLE_OPTICAL_FIBER = block(CreateComputationalModBlocks.TOP_SINGLE_OPTICAL_FIBER);
 	}
 
 	// Start of user code block custom items

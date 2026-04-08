@@ -24,11 +24,11 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.createcomputational.procedures.TestTransferOnTickUpdateProcedure;
 
-public class SingleOpticalFiberBlock extends Block {
+public class TopSingleOpticalFiberBlock extends Block {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 	public static final BooleanProperty TRANSFER = BooleanProperty.create("transfer");
 
-	public SingleOpticalFiberBlock() {
+	public TopSingleOpticalFiberBlock() {
 		super(BlockBehaviour.Properties.of().sound(SoundType.GLASS).strength(1f, 10f).noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false).instrument(NoteBlockInstrument.HAT));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(TRANSFER, false));
 	}

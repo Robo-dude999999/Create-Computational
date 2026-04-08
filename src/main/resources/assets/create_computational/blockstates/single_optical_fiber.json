@@ -1,57 +1,19 @@
 {
   "variants": {
-    "face=floor,facing=north": {
+    "facing=north": {
       "model": "create_computational:block/single_optical_fiber"
     },
-    "face=floor,facing=east": {
+    "facing=east": {
       "model": "create_computational:block/single_optical_fiber",
       "y": 90
     },
-    "face=floor,facing=south": {
+    "facing=south": {
       "model": "create_computational:block/single_optical_fiber",
       "y": 180
     },
-    "face=floor,facing=west": {
+    "facing=west": {
       "model": "create_computational:block/single_optical_fiber",
       "y": 270
-    },
-    "face=wall,facing=north": {
-      "model": "create_computational:block/single_optical_fiber",
-      "x": 90
-    },
-    "face=wall,facing=east": {
-      "model": "create_computational:block/single_optical_fiber",
-      "x": 90,
-      "y": 90
-    },
-    "face=wall,facing=south": {
-      "model": "create_computational:block/single_optical_fiber",
-      "x": 90,
-      "y": 180
-    },
-    "face=wall,facing=west": {
-      "model": "create_computational:block/single_optical_fiber",
-      "x": 90,
-      "y": 270
-    },
-    "face=ceiling,facing=north": {
-      "model": "create_computational:block/single_optical_fiber",
-      "x": 180,
-      "y": 180
-    },
-    "face=ceiling,facing=east": {
-      "model": "create_computational:block/single_optical_fiber",
-      "x": 180,
-      "y": 270
-    },
-    "face=ceiling,facing=south": {
-      "model": "create_computational:block/single_optical_fiber",
-      "x": 180
-    },
-    "face=ceiling,facing=west": {
-      "model": "create_computational:block/single_optical_fiber",
-      "x": 180,
-      "y": 90
     }
   }
 }

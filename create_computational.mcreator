@@ -336,6 +336,22 @@
           "src/main/java/net/mcreator/createcomputational/block/SingleOpticalFiberBlock.java"
         ]
       }
+    },
+    {
+      "name": "TopSingleOpticalFiber",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "top_single_optical_fiber",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcomputational/block/TopSingleOpticalFiberBlock.java",
+          "src/main/resources/assets/create_computational/models/item/top_single_optical_fiber.json",
+          "src/main/resources/assets/create_computational/blockstates/top_single_optical_fiber.json",
+          "src/main/resources/assets/create_computational/models/block/top_single_optical_fiber.json",
+          "src/main/resources/data/create_computational/loot_tables/blocks/top_single_optical_fiber.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -369,7 +385,8 @@
       "block.create_computational.test_holder": "Test Holder",
       "block.create_computational.test_t_split": "Test T Split Out",
       "block.create_computational.test_t_split_in": "Test T Split In",
-      "block.create_computational.single_optical_fiber": "Single Optical Fiber"
+      "block.create_computational.single_optical_fiber": "Single Optical Fiber",
+      "block.create_computational.top_single_optical_fiber": "Single Optical Fiber"
     }
   },
   "metadata": {
