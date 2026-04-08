@@ -30,7 +30,7 @@ public class TestTransferOnTickUpdateProcedure {
 		}
 		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == (world.getBlockState(BlockPos.containing(xx, y, zz))).getBlock()
 				&& (getDirectionFromBlockState((world.getBlockState(BlockPos.containing(xx, y, zz))))) == (getDirectionFromBlockState((world.getBlockState(BlockPos.containing(x, y, z)))))
-				|| (world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == CreateComputationalModBlocks.TEST_T_SPLIT_IN.get()
+				|| (world.getBlockState(BlockPos.containing(xx, y, zz))).getBlock() == CreateComputationalModBlocks.TEST_T_SPLIT_IN.get()
 						&& (getDirectionFromBlockState((world.getBlockState(BlockPos.containing(xx, y, zz))))) == (getDirectionFromBlockState((world.getBlockState(BlockPos.containing(x, y, z)))))
 				|| (world.getBlockState(BlockPos.containing(xx, y, zz))).getBlock() == CreateComputationalModBlocks.TEST_HOLDER.get()
 				|| (world.getBlockState(BlockPos.containing(xx, y, zz))).getBlock() == CreateComputationalModBlocks.TEST_T_SPLIT.get()
