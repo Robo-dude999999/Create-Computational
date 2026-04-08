@@ -51,10 +51,10 @@ public class TopSingleOpticalFiberBlock extends Block {
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return switch (state.getValue(FACING)) {
-			default -> box(6.5, -1, 0, 9.5, 2, 16);
-			case NORTH -> box(6.5, -1, 0, 9.5, 2, 16);
-			case EAST -> box(0, -1, 6.5, 16, 2, 9.5);
-			case WEST -> box(0, -1, 6.5, 16, 2, 9.5);
+			default -> Shapes.or(box(6.5, 14, 0, 9.5, 17, 16), box(7.25, 14.75, 7.5, 8.75, 16.5, 8.5));
+			case NORTH -> Shapes.or(box(6.5, 14, 0, 9.5, 17, 16), box(7.25, 14.75, 7.5, 8.75, 16.5, 8.5));
+			case EAST -> Shapes.or(box(0, 14, 6.5, 16, 17, 9.5), box(7.5, 14.75, 7.25, 8.5, 16.5, 8.75));
+			case WEST -> Shapes.or(box(0, 14, 6.5, 16, 17, 9.5), box(7.5, 14.75, 7.25, 8.5, 16.5, 8.75));
 		};
 	}
 
